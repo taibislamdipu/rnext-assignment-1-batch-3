@@ -2,6 +2,7 @@ import CompaniesLogo from "./components/CompaniesLogo";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import ServiceOne from "./components/ServiceOne";
+import ServiceTwo from "./components/ServiceTwo";
 import "./index.css";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <HeroSection />
       <CompaniesLogo />
       <ServiceOne />
+      <ServiceTwo />
     </>
   );
 }
