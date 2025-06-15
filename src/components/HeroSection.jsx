@@ -1,6 +1,5 @@
 import FigmaIcon from "../icons/FigmaIcon";
 import GitHubIcon from "../icons/GitHubIcon";
-import LinkButton from "./LinkButton";
 
 export default function HeroSection() {
   const heroContent = {
@@ -33,19 +32,19 @@ export default function HeroSection() {
           </p>
 
           <div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
-            <LinkButton
+            <a
               href="#"
               className="inline-flex w-full items-center justify-center rounded-lg border border-gray-200 px-5 py-3 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 sm:w-auto dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-800"
             >
               <GitHubIcon /> View on GitHub
-            </LinkButton>
+            </a>
 
-            <LinkButton
+            <a
               href="#"
               className="inline-flex w-full items-center justify-center rounded-lg border border-gray-200 bg-white px-5 py-3 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 focus:outline-none sm:w-auto dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
             >
               <FigmaIcon /> Get Figma file
-            </LinkButton>
+            </a>
           </div>
         </div>
         <div className="hidden lg:col-span-5 lg:mt-0 lg:flex">

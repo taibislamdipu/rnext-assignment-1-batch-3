@@ -1,5 +1,3 @@
-import LinkButton from "./LinkButton";
-
 export default function Navbar() {
   const navLinks = {
     brand: {
@@ -24,12 +22,12 @@ export default function Navbar() {
 
   return (
     <header className="fixed w-full">
-      <nav className="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
-        <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+      <nav className="border-gray-200 bg-white py-2.5 dark:bg-gray-900">
+        <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between px-4">
           <a href="#" className="flex items-center">
             <img
               src={navLinks.brand.logo}
-              className="h-6 mr-3 sm:h-9"
+              className="mr-3 h-6 sm:h-9"
               alt={navLinks.brand.name}
             />
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
@@ -38,27 +36,27 @@ export default function Navbar() {
           </a>
 
           <div className="flex items-center lg:order-2">
-            <LinkButton
+            <a
               href="#"
               target="_blank"
-              className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800"
+              className="rounded-lg bg-purple-700 px-4 py-2 text-sm font-medium text-white hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 focus:outline-none sm:mr-2 lg:mr-0 lg:px-5 lg:py-2.5 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"
             >
               {navLinks.cta.label}
-            </LinkButton>
+            </a>
           </div>
 
           <div
-            className="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
+            className="hidden w-full items-center justify-between lg:order-1 lg:flex lg:w-auto"
             id="mobile-menu-2"
           >
-            <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+            <ul className="mt-4 flex flex-col font-medium lg:mt-0 lg:flex-row lg:space-x-8">
               {navLinks.menu.map((item) => (
                 <li>
                   <a
                     href="#"
                     className={`${
                       item.active && "text-white dark:text-white"
-                    } block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700`}
+                    } block border-b border-gray-100 py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 lg:border-0 lg:p-0 lg:hover:bg-transparent lg:hover:text-purple-700 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent lg:dark:hover:text-white`}
                     aria-current="page"
                   >
                     {item.label}
