@@ -1,8 +1,6 @@
 import FigmaIcon from "../icons/FigmaIcon";
 import GitHubIcon from "../icons/GitHubIcon";
-import Image from "./Image";
 import LinkButton from "./LinkButton";
-import Paragraph from "./Paragraph";
 
 export default function HeroSection() {
   const heroContent = {
@@ -30,9 +28,9 @@ export default function HeroSection() {
             {heroContent.title2}
           </h1>
 
-          <Paragraph className="mb-6 max-w-2xl font-light text-gray-500 md:text-lg lg:mb-8 lg:text-xl dark:text-gray-400">
+          <p className="mb-6 max-w-2xl font-light text-gray-500 md:text-lg lg:mb-8 lg:text-xl dark:text-gray-400">
             {heroContent.description}
-          </Paragraph>
+          </p>
 
           <div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
             <LinkButton
@@ -51,7 +49,7 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="hidden lg:col-span-5 lg:mt-0 lg:flex">
-          <Image src="./assets/hero.png" alt="hero image" />
+          <img src="./assets/hero.png" alt="hero image" />
         </div>
       </div>
     </section>

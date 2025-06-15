@@ -1,7 +1,4 @@
 import CheckIcon from "../icons/CheckIcon";
-import HeadingTwo from "./HeadingTwo";
-import Image from "./Image";
-import Paragraph from "./Paragraph";
 
 export default function ServiceOne() {
   const serviceOneContent = {
@@ -68,12 +65,12 @@ export default function ServiceOne() {
         {/* Sub Service 1 */}
         <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
           <div className="text-gray-500 sm:text-lg dark:text-gray-400">
-            <HeadingTwo className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+            <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
               {serviceOneContent.title1}
-            </HeadingTwo>
-            <Paragraph className="mb-8 font-light lg:text-xl">
+            </h2>
+            <p className="mb-8 font-light lg:text-xl">
               {serviceOneContent.desc1}
-            </Paragraph>
+            </p>
 
             <ul
               role="list"
@@ -89,11 +86,11 @@ export default function ServiceOne() {
               ))}
             </ul>
 
-            <Paragraph className="mb-8 font-light lg:text-xl">
+            <p className="mb-8 font-light lg:text-xl">
               {serviceOneContent.desc2}
-            </Paragraph>
+            </p>
           </div>
-          <Image
+          <img
             className="mb-4 hidden w-full rounded-lg lg:mb-0 lg:flex"
             src={serviceOneContent.imgPath}
             alt={serviceOneContent.imgAlt}
@@ -102,18 +99,18 @@ export default function ServiceOne() {
 
         {/* Sub Service 2  */}
         <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
-          <Image
+          <img
             className="mb-4 hidden w-full rounded-lg lg:mb-0 lg:flex"
             src={serviceTwoContent.imgPath}
             alt={serviceTwoContent.imgAlt}
           />
           <div className="text-gray-500 sm:text-lg dark:text-gray-400">
-            <HeadingTwo className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+            <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
               {serviceTwoContent.title1}
-            </HeadingTwo>
-            <Paragraph className="mb-8 font-light lg:text-xl">
+            </h2>
+            <p className="mb-8 font-light lg:text-xl">
               {serviceTwoContent.desc1}
-            </Paragraph>
+            </p>
 
             <ul
               role="list"
@@ -128,9 +125,7 @@ export default function ServiceOne() {
                 </li>
               ))}
             </ul>
-            <Paragraph className="font-light lg:text-xl">
-              {serviceTwoContent.desc2}
-            </Paragraph>
+            <p className="font-light lg:text-xl">{serviceTwoContent.desc2}</p>
           </div>
         </div>
       </div>
