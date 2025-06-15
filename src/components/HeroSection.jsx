@@ -1,5 +1,6 @@
 import FigmaIcon from "../icons/FigmaIcon";
 import GitHubIcon from "../icons/GitHubIcon";
+import Image from "./Image";
 import LinkButton from "./LinkButton";
 import Paragraph from "./Paragraph";
 
@@ -50,7 +51,7 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="hidden lg:col-span-5 lg:mt-0 lg:flex">
-          <img src="./assets/hero.png" alt="hero image" />
+          <Image src="./assets/hero.png" alt="hero image" />
         </div>
       </div>
     </section>

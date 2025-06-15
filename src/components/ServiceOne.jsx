@@ -1,5 +1,6 @@
 import CheckIcon from "../icons/CheckIcon";
 import HeadingTwo from "./HeadingTwo";
+import Image from "./Image";
 import Paragraph from "./Paragraph";
 
 export default function ServiceOne() {
@@ -9,6 +10,8 @@ export default function ServiceOne() {
       "Deliver great service experiences fast - without the complexity of traditional ITSM solutions Accelerate critical development work, eliminate toil, and deploy changes with ease.",
     desc2:
       "Deliver great service experiences fast - without the complexity of traditional ITSM solutions.",
+    imgPath: "./assets/features/feature-1.png",
+    imgAlt: "dashboard feature image",
   };
 
   const serviceOneListItem = [
@@ -57,10 +60,10 @@ export default function ServiceOne() {
               {serviceOneContent.desc2}
             </Paragraph>
           </div>
-          <img
+          <Image
             className="mb-4 hidden w-full rounded-lg lg:mb-0 lg:flex"
-            src="./assets/features/feature-1.png"
-            alt="dashboard feature image"
+            src={serviceOneContent.imgPath}
+            alt={serviceOneContent.imgAlt}
           />
         </div>
 
