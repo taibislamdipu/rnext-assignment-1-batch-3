@@ -1,4 +1,5 @@
 import TickIcon from "../icons/TickIcon";
+import Button from "./ui/Button";
 
 export default function Pricing() {
   const pricingPlans = [
@@ -87,12 +88,7 @@ export default function Pricing() {
                   </li>
                 ))}
               </ul>
-              <a
-                href="#"
-                className="rounded-lg bg-purple-600 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-purple-700 focus:ring-4 focus:ring-purple-200 dark:text-white dark:focus:ring-purple-900"
-              >
-                {p.cta}
-              </a>
+              <Button>{p.cta}</Button>
             </div>
           ))}
         </div>

@@ -1,3 +1,5 @@
+import Button from "./ui/Button";
+
 export default function Navbar() {
   const navLinks = {
     brand: {
@@ -36,13 +38,7 @@ export default function Navbar() {
           </a>
 
           <div className="flex items-center lg:order-2">
-            <a
-              href="#"
-              target="_blank"
-              className="rounded-lg bg-purple-700 px-4 py-2 text-sm font-medium text-white hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 focus:outline-none sm:mr-2 lg:mr-0 lg:px-5 lg:py-2.5 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"
-            >
-              {navLinks.cta.label}
-            </a>
+            <Button>{navLinks.cta.label}</Button>
           </div>
 
           <div

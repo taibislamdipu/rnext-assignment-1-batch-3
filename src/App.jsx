@@ -6,6 +6,7 @@ import Pricing from "./components/Pricing";
 import ServiceOne from "./components/ServiceOne";
 import ServiceTwo from "./components/ServiceTwo";
 import Testimonial from "./components/Testimonial";
+import Trial from "./components/Trial";
 import "./index.css";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Testimonial />
       <Pricing />
       <FAQ />
+      <Trial />
     </>
   );
 }
