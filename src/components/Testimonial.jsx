@@ -18,6 +18,7 @@ export default function Testimonial() {
               className="h-6 w-6 rounded-full"
               src="./assets/avatar/michael-gouch.png"
               alt="profile picture"
+              draggable="false"
             />
             <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
               <div className="pr-3 font-medium text-gray-900 dark:text-white">

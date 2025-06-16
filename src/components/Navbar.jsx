@@ -4,7 +4,7 @@ export default function Navbar() {
   const navLinks = {
     brand: {
       logo: "./assets/logo.svg",
-      name: "Learn with Sumit",
+      name: "Buildtide",
     },
 
     menu: [

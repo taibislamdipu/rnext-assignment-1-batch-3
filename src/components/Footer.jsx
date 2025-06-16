@@ -92,27 +92,16 @@ export default function Footer() {
 
         {/* Sub Footer 2 */}
         <div className="text-center">
-          <a
-            href="#"
-            className="mb-5 flex items-center justify-center text-2xl font-semibold text-gray-900 dark:text-white"
-          >
+          <div className="mb-5 flex items-center justify-center text-2xl font-semibold text-gray-900 dark:text-white">
             <img
               src="./assets/logo.svg"
               className="mr-3 h-6 sm:h-9"
               alt="Learn with Sumit Logo"
             />
-            Learn with Sumit
-          </a>
+            Buildtide | Poetic, implies momentum in building
+          </div>
           <span className="block text-center text-sm text-gray-500 dark:text-gray-400">
-            © 2024-2025 Learn with Sumit. All Rights Reserved. Built with{" "}
-            <a
-              href="#"
-              target="_blank"
-              className="text-purple-600 hover:underline dark:text-purple-500"
-            >
-              Flowbite
-            </a>{" "}
-            and{" "}
+            © 2024-2025 Buildtide. All Rights Reserved. Built with{" "}
             <a
               href="#"
               className="text-purple-600 hover:underline dark:text-purple-500"

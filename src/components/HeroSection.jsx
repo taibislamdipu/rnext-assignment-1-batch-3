@@ -9,11 +9,13 @@ export default function HeroSection() {
       <>
         This free and open-source landing page template was built using the
         utility classes from{" "}
-        <a href="#" className="hover:underline">
-          Tailwind CSS
+        <a
+          href="https://tailwindcss.com"
+          target="_blank"
+          className="hover:underline"
+        >
+          Tailwind CSS.
         </a>{" "}
-        and based on the components from the Flowbite Library and the Blocks
-        System.
       </>
     ),
   };
@@ -33,7 +35,8 @@ export default function HeroSection() {
 
           <div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
             <a
-              href="#"
+              href="https://github.com/taibislamdipu/rnext-assignment-1-batch-3"
+              target="_blank"
               className="inline-flex w-full items-center justify-center rounded-lg border border-gray-200 px-5 py-3 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 sm:w-auto dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-800"
             >
               <GitHubIcon /> View on GitHub
@@ -48,7 +51,7 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="hidden lg:col-span-5 lg:mt-0 lg:flex">
-          <img src="./assets/hero.png" alt="hero image" />
+          <img src="./assets/hero.png" alt="hero image" draggable="false" />
         </div>
       </div>
     </section>
