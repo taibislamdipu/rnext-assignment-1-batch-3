@@ -1,4 +1,5 @@
 import CompaniesLogo from "./components/CompaniesLogo";
+import FAQ from "./components/FAQ";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import Pricing from "./components/Pricing";
@@ -17,6 +18,7 @@ function App() {
       <ServiceTwo />
       <Testimonial />
       <Pricing />
+      <FAQ />
     </>
   );
 }
